@@ -14,7 +14,7 @@ def currency_rates():
     try:
         for base in bases:
             # For now only considered API Call to get latest dates as the timeseries API is restricted to my account.
-            url = 'http://data.fixer.io/api/latest?access_key=70642aa874dd1f11a014f73ef421944c&base=' + base
+            url = 'http://data.fixer.io/api/latest?access_key=blahblah=' + base
             response = requests.get(url)
 
         if response.status_code != 200:
